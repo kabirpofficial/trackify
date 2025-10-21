@@ -31,7 +31,7 @@ cd trackify
 npx nx serve backend
 
 # Frontend
-npx nx serve frontend
+npx nx dev @trackify/frontend
 ```
 
 
