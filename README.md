@@ -32,3 +32,12 @@ npx nx serve backend
 
 # Frontend
 npx nx serve frontend
+```
+
+
+## 3. Create environment example:
+```bash
+**File: `apps/backend/.env.example`**
+
+# Frontend
+npx nx serve frontend
