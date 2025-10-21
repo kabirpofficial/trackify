@@ -1,38 +1,24 @@
 # Trackify - Expense Tracking Platform
 
-A full-stack expense tracking application built with Next.js frontend and NestJS backend in an Nx monorepo.
+A full-stack expense tracking application built with Next.js frontend and NestJS backend.
 
-## 🚀 Features
+## Features
+- User Authentication with JWT
+- Expense Management
+- Category Organization
+- Dashboard Analytics
+- Responsive Design
+- Dark/Light Mode
 
-- **User Authentication** - Register and login with JWT
-- **Expense Management** - Add, view, and track expenses
-- **Category Organization** - Categorize your expenses
-- **Dashboard Analytics** - View spending insights and reports
-- **Responsive Design** - Works on all devices
-- **Dark/Light Mode** - Beautiful UI themes
+## Tech Stack
+- Frontend: Next.js, TypeScript, Tailwind CSS
+- Backend: NestJS, PostgreSQL
+- Database: PostgreSQL
+- Authentication: JWT
 
-## 🛠 Tech Stack
-
-- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
-- **Backend**: NestJS, TypeORM, PostgreSQL
-- **Authentication**: JWT, bcrypt
-- **Database**: PostgreSQL
-- **Monorepo**: Nx Workspace
-
-## 📦 Project Structure
-
-
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- PostgreSQL
-- Nx CLI (`npm install -g nx`)
-
-### Installation
+## Installation
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/kabirpofficial/trackify.git
 cd trackify
