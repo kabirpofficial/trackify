@@ -1,0 +1,710 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.6.5",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        },
+        "build": {
+          "targetName": "build",
+          "configName": "tsconfig.lib.json",
+          "buildDepsName": "build-deps",
+          "watchDepsName": "watch-deps"
+        }
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": "README.md",
+        "hash": "2644775923052011117"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "13811485349226076133"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "package.json",
+        "hash": "16683150076774857919"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "packages/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "9534165884945022595"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "6937399917070663567"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16263328460553568052"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1995123922413184256"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3771613698652146222"
+      }
+    ],
+    "projectFileMap": {
+      "@trackify/frontend-e2e": [
+        {
+          "file": "apps/frontend-e2e/eslint.config.mjs",
+          "hash": "1172734138943286526",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/package.json",
+          "hash": "16435722442258392628"
+        },
+        {
+          "file": "apps/frontend-e2e/playwright.config.ts",
+          "hash": "691793031269430731",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/frontend-e2e/tsconfig.json",
+          "hash": "15001458170383955177"
+        }
+      ],
+      "backend-e2e": [
+        {
+          "file": "apps/backend-e2e/.spec.swcrc",
+          "hash": "18201067170784284381"
+        },
+        {
+          "file": "apps/backend-e2e/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/backend-e2e/jest.config.ts",
+          "hash": "14813722335514234908"
+        },
+        {
+          "file": "apps/backend-e2e/package.json",
+          "hash": "9872347066071795119"
+        },
+        {
+          "file": "apps/backend-e2e/src/backend/backend.spec.ts",
+          "hash": "110394728024017389",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/backend-e2e/src/support/global-setup.ts",
+          "hash": "10817858795115919263",
+          "deps": [
+            "npm:@nx/node"
+          ]
+        },
+        {
+          "file": "apps/backend-e2e/src/support/global-teardown.ts",
+          "hash": "14210317125869451873",
+          "deps": [
+            "npm:@nx/node"
+          ]
+        },
+        {
+          "file": "apps/backend-e2e/src/support/test-setup.ts",
+          "hash": "15521797170623961900",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/backend-e2e/tsconfig.json",
+          "hash": "13793727968565265725"
+        }
+      ],
+      "@trackify/types": [
+        {
+          "file": "libs/types/.spec.swcrc",
+          "hash": "18201067170784284381"
+        },
+        {
+          "file": "libs/types/README.md",
+          "hash": "13772285104981421833"
+        },
+        {
+          "file": "libs/types/eslint.config.mjs",
+          "hash": "7869296838249384130"
+        },
+        {
+          "file": "libs/types/jest.config.ts",
+          "hash": "656217499697080413"
+        },
+        {
+          "file": "libs/types/package.json",
+          "hash": "12226271433939290272"
+        },
+        {
+          "file": "libs/types/src/index.ts",
+          "hash": "11712508580200815865"
+        },
+        {
+          "file": "libs/types/src/lib/types.spec.ts",
+          "hash": "9354891611907858840"
+        },
+        {
+          "file": "libs/types/src/lib/types.ts",
+          "hash": "10975995135721992242"
+        },
+        {
+          "file": "libs/types/tsconfig.json",
+          "hash": "12834038490315927699"
+        },
+        {
+          "file": "libs/types/tsconfig.lib.json",
+          "hash": "17233988772328281602"
+        },
+        {
+          "file": "libs/types/tsconfig.spec.json",
+          "hash": "12971962995897902409"
+        }
+      ],
+      "@trackify/frontend": [
+        {
+          "file": "apps/frontend/.swcrc",
+          "hash": "2742566327615098680"
+        },
+        {
+          "file": "apps/frontend/eslint.config.mjs",
+          "hash": "7770570195995859491",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@eslint/compat",
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/frontend/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/frontend/jest.config.ts",
+          "hash": "18406669408853974365",
+          "deps": [
+            "npm:jest",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/next-env.d.ts",
+          "hash": "1320675027584673186"
+        },
+        {
+          "file": "apps/frontend/next.config.js",
+          "hash": "5443563404894739361",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/frontend/package.json",
+          "hash": "15057009686402952627",
+          "deps": [
+            "npm:next",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/frontend/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "apps/frontend/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/frontend/specs/index.spec.tsx",
+          "hash": "2873936096691223229",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/add-expense/page.tsx",
+          "hash": "13601437859947468756",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/api/hello/route.ts",
+          "hash": "495073956729887886"
+        },
+        {
+          "file": "apps/frontend/src/app/categories/page.tsx",
+          "hash": "3279883842973267565",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/contexts/AuthContext.tsx",
+          "hash": "16415791118777195405",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/dashboard/page.tsx",
+          "hash": "9650100624484345922",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/global.css",
+          "hash": "9376156602716554662"
+        },
+        {
+          "file": "apps/frontend/src/app/layout.tsx",
+          "hash": "2699754533369234894"
+        },
+        {
+          "file": "apps/frontend/src/app/login/page.tsx",
+          "hash": "13467029789060420656",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/page.tsx",
+          "hash": "4769429077220504516",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/register/page.tsx",
+          "hash": "8062272630796016028",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/tailwind.config.js",
+          "hash": "5937918000814531646"
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "12909195752140025330"
+        },
+        {
+          "file": "apps/frontend/tsconfig.spec.json",
+          "hash": "12164629648044270140"
+        }
+      ],
+      "backend": [
+        {
+          "file": "apps/backend/.spec.swcrc",
+          "hash": "18201067170784284381"
+        },
+        {
+          "file": "apps/backend/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/backend/jest.config.ts",
+          "hash": "6978535743693240242"
+        },
+        {
+          "file": "apps/backend/package.json",
+          "hash": "14441147667191865419",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:reflect-metadata",
+            "npm:rxjs",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/app.controller.spec.ts",
+          "hash": "7647647754668916054",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/app.controller.ts",
+          "hash": "15276891910009544695",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/app.module.ts",
+          "hash": "10702616254607854195",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/config"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/app.service.spec.ts",
+          "hash": "13111976464657524091",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/auth/auth.controller.ts",
+          "hash": "12988473058635099767",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/auth/auth.module.ts",
+          "hash": "8749814070526879028",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/config"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/auth/auth.service.ts",
+          "hash": "15243290407975502947",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm",
+            "npm:bcrypt"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/auth/dto/login.dto.ts",
+          "hash": "10857621099233263760",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/auth/dto/register.dto.ts",
+          "hash": "7608259256079700530",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/auth/jwt-auth.guard.ts",
+          "hash": "8401166529449359940",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/auth/jwt.strategy.ts",
+          "hash": "17989088220726898199",
+          "deps": [
+            "npm:passport-jwt",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/common",
+            "npm:@nestjs/config"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/categories/categories.controller.ts",
+          "hash": "8385105630277967268",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/categories/categories.module.ts",
+          "hash": "963441204058777381",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/categories/categories.service.ts",
+          "hash": "9735869498161036745",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/categories/category.entity.ts",
+          "hash": "17759657065033142349",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/categories/dto/create-category.dto.ts",
+          "hash": "3354982648636890301",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/expenses/dto/create-expense.dto.ts",
+          "hash": "7121902389145876670",
+          "deps": [
+            "npm:class-validator",
+            "npm:class-transformer"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/expenses/expense.entity.ts",
+          "hash": "735692817755865377",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/expenses/expenses.controller.ts",
+          "hash": "2157376594968161613",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/expenses/expenses.module.ts",
+          "hash": "8446977236857104656",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/expenses/expenses.service.ts",
+          "hash": "11256661958308638992",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/reports/reports.controller.ts",
+          "hash": "17298413179370278392",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/reports/reports.module.ts",
+          "hash": "12888782423629784413",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/backend/src/app/users/user.entity.ts",
+          "hash": "1586477472986045988",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/backend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/backend/src/main.ts",
+          "hash": "17094281873194748875",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/backend/tsconfig.app.json",
+          "hash": "3368020071434847310"
+        },
+        {
+          "file": "apps/backend/tsconfig.json",
+          "hash": "9214820933160915425"
+        },
+        {
+          "file": "apps/backend/tsconfig.spec.json",
+          "hash": "9413783055333234820"
+        },
+        {
+          "file": "apps/backend/webpack.config.js",
+          "hash": "4863786912287833678",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "@trackify/utils": [
+        {
+          "file": "libs/utils/.spec.swcrc",
+          "hash": "18201067170784284381"
+        },
+        {
+          "file": "libs/utils/README.md",
+          "hash": "14342862180974447819"
+        },
+        {
+          "file": "libs/utils/eslint.config.mjs",
+          "hash": "7869296838249384130"
+        },
+        {
+          "file": "libs/utils/jest.config.ts",
+          "hash": "8308004791431498782"
+        },
+        {
+          "file": "libs/utils/package.json",
+          "hash": "3815867375290460785"
+        },
+        {
+          "file": "libs/utils/src/index.ts",
+          "hash": "1424520165591673030"
+        },
+        {
+          "file": "libs/utils/src/lib/api.ts",
+          "hash": "5605414906695896689",
+          "deps": [
+            "@trackify/types"
+          ]
+        },
+        {
+          "file": "libs/utils/src/lib/utils.spec.ts",
+          "hash": "17453479995195199863"
+        },
+        {
+          "file": "libs/utils/src/lib/utils.ts",
+          "hash": "17287710670217841263"
+        },
+        {
+          "file": "libs/utils/tsconfig.json",
+          "hash": "2930406139361091808"
+        },
+        {
+          "file": "libs/utils/tsconfig.lib.json",
+          "hash": "12083255156562153415"
+        },
+        {
+          "file": "libs/utils/tsconfig.spec.json",
+          "hash": "12971962995897902409"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "956017620352526274"
+}
