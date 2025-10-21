@@ -37,7 +37,7 @@ export default function AddExpensePage() {
   const fetchCategories = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3000/api/categories', {
+      const response = await fetch('http://localhost:8080/api/categories', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -73,7 +73,7 @@ export default function AddExpensePage() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3000/api/expenses', {
+      const response = await fetch('http://localhost:8080/api/expenses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

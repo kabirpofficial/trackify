@@ -2502,6 +2502,15 @@
         "hash": "sha512-pLuQo+VPRnN8hfPqUTLTHk126wuYdXVxE6aDmjSeV4NCAgyxWbiOIeNJVtID3h1Vzpoi9m4jXezf73I6LgabgQ=="
       }
     },
+    "npm:@kurkle/color": {
+      "type": "npm",
+      "name": "npm:@kurkle/color",
+      "data": {
+        "version": "0.3.4",
+        "packageName": "@kurkle/color",
+        "hash": "sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w=="
+      }
+    },
     "npm:@leichtgewicht/ip-codec": {
       "type": "npm",
       "name": "npm:@leichtgewicht/ip-codec",
@@ -7747,6 +7756,15 @@
         "version": "1.0.2",
         "packageName": "char-regex",
         "hash": "sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw=="
+      }
+    },
+    "npm:chart.js": {
+      "type": "npm",
+      "name": "npm:chart.js",
+      "data": {
+        "version": "4.5.1",
+        "packageName": "chart.js",
+        "hash": "sha512-GIjfiT9dbmHRiYi6Nl2yFCq7kkwdkp1W/lp2J99rX0yo9tgJGn3lKQATztIjb5tVtevcBtIdICNWqlq5+E8/Pw=="
       }
     },
     "npm:check-error": {
@@ -14542,6 +14560,15 @@
         "version": "19.0.0",
         "packageName": "react",
         "hash": "sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ=="
+      }
+    },
+    "npm:react-chartjs-2": {
+      "type": "npm",
+      "name": "npm:react-chartjs-2",
+      "data": {
+        "version": "5.3.0",
+        "packageName": "react-chartjs-2",
+        "hash": "sha512-UfZZFnDsERI3c3CZGxzvNJd02SHjaSJ8kgW1djn65H1KK8rehwTjyrRKOG3VTMG8wtHZ5rgAO5oTHtHi9GCCmw=="
       }
     },
     "npm:react-dom": {
@@ -26395,6 +26422,11 @@
       "type": "static"
     },
     {
+      "source": "npm:chart.js",
+      "target": "npm:@kurkle/color",
+      "type": "static"
+    },
+    {
       "source": "npm:chokidar",
       "target": "npm:readdirp",
       "type": "static"
@@ -34122,6 +34154,16 @@
     {
       "source": "npm:iconv-lite@0.4.24",
       "target": "npm:safer-buffer",
+      "type": "static"
+    },
+    {
+      "source": "npm:react-chartjs-2",
+      "target": "npm:chart.js",
+      "type": "static"
+    },
+    {
+      "source": "npm:react-chartjs-2",
+      "target": "npm:react",
       "type": "static"
     },
     {

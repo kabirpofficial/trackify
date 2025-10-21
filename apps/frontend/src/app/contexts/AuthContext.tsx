@@ -64,7 +64,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const login = async (email: string, password: string) => {
-    const data = await apiRequest('http://localhost:3000/api/auth/login', {
+    const data = await apiRequest('http://localhost:8080/api/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
     });
@@ -75,7 +75,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const register = async (name: string, email: string, password: string) => {
-    const data = await apiRequest('http://localhost:3000/api/auth/register', {
+    const data = await apiRequest('http://localhost:8080/api/auth/register', {
       method: 'POST',
       body: JSON.stringify({ name, email, password }),
     });

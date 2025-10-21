@@ -29,7 +29,7 @@ export default function CategoriesPage() {
   const fetchCategories = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3000/api/categories', {
+      const response = await fetch('http://localhost:8080/api/categories', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -54,7 +54,7 @@ export default function CategoriesPage() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3000/api/categories', {
+      const response = await fetch('http://localhost:8080/api/categories', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
