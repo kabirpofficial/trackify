@@ -41,3 +41,18 @@ npx nx dev @trackify/frontend
 
 # Frontend
 npx nx serve frontend
+```
+
+## Screenshots
+
+## Screenshots
+<p align="center">
+  <img src="/images/sc1.png" alt="Screenshot 1" width="300" style="margin:6px;" />
+  <img src="/images/sc2.png" alt="Screenshot 2" width="300" style="margin:6px;" />
+  <img src="/images/sc3.png" alt="Screenshot 3" width="300" style="margin:6px;" />
+</p>
+
+<p align="center">
+  <img src="/images/sc4.png" alt="Screenshot 4" width="300" style="margin:6px;" />
+  <img src="/images/sc5.png" alt="Screenshot 5" width="300" style="margin:6px;" />
+</p>
