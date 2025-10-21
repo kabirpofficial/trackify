@@ -22,3 +22,13 @@ A full-stack expense tracking application built with Next.js frontend and NestJS
 ```bash
 git clone https://github.com/kabirpofficial/trackify.git
 cd trackify
+```
+
+2. Run Project
+```bash
+
+# Backend
+npx nx serve backend
+
+# Frontend
+npx nx serve frontend
